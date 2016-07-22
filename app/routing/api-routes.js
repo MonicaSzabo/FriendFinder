@@ -48,12 +48,8 @@ module.exports = function (app) {
 			}
 		}
 
-		console.log("smallest difference number = " + bestFriendNum);
-		console.log("at this index = " + bestFriendIndex);
-
-
 		friendData.push(newFriend);
 
-		res.redirect('/survey');
+		res.json(friendData[bestFriendIndex]);
 	})
 }
