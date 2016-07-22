@@ -14,4 +14,4 @@ require('./app/routing/api-routes.js')(app);
 require('./app/routing/html-routes.js')(app);
 
 
-app.listen(process.env.PORT || 8081);
+app.listen(process.env.PORT || 3000);
