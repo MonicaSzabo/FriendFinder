@@ -19,12 +19,12 @@
 			</fieldset>
 			<fieldset class="form-group">
 				<label for="photo">Link to Photo Image (Required)</label>
-				<input type="text" class="form-control" placeholder="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13116244_10107568960519320_7024834722285826624_o.jpg" id="photo" name="photo" required>
+				<input type="text" class="form-control" placeholder="http://coolpic.jpg" id="photo" name="photo" required>
 			</fieldset>
 			<hr>
 			<h4><strong>Question 1</strong></h4>
 			<fieldset class="form-group">
-				<label for="question01">Question Here</label>
+				<label for="question01">I love trying new things.</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question01" name="scores[0]">
@@ -38,7 +38,7 @@
 			</fieldset>
 			<h4><strong>Question 2</strong></h4>
 			<fieldset class="form-group">
-				<label for="question02">Question Here</label>
+				<label for="question02">I get along great with my family.</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question02" name="scores[1]">
@@ -52,7 +52,7 @@
 			</fieldset>
 			<h4><strong>Question 3</strong></h4>
 			<fieldset class="form-group">
-				<label for="question03">Question Here</label>
+				<label for="question03">Scary movies are the best!</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question03" name="scores[2]">
@@ -66,7 +66,7 @@
 			</fieldset>
 			<h4><strong>Question 4</strong></h4>
 			<fieldset class="form-group">
-				<label for="question04">Question Here</label>
+				<label for="question04">I love telling stories to anyone who will listen.</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question04" name="scores[3]"">
@@ -80,7 +80,7 @@
 			</fieldset>
 			<h4><strong>Question 5</strong></h4>
 			<fieldset class="form-group">
-				<label for="question05">Question Here</label>
+				<label for="question05">My religion is very important to me.</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question05" name="scores[4]">
@@ -94,7 +94,7 @@
 			</fieldset>
 			<h4><strong>Question 6</strong></h4>
 			<fieldset class="form-group">
-				<label for="question06">Question Here</label>
+				<label for="question06">Books are amazing, I love to read.</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question06" name="scores[5]">
@@ -108,7 +108,7 @@
 			</fieldset>
 			<h4><strong>Question 7</strong></h4>
 			<fieldset class="form-group">
-				<label for="question07">Question Here</label>
+				<label for="question07">Cats are the best!</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question07" name="scores[6]">
@@ -122,7 +122,7 @@
 			</fieldset>
 			<h4><strong>Question 8</strong></h4>
 			<fieldset class="form-group">
-				<label for="question08">Question Here</label>
+				<label for="question08">Poetry is not worth my time.</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question08" name="scores[7]">
@@ -136,7 +136,7 @@
 			</fieldset>
 			<h4><strong>Question 9</strong></h4>
 			<fieldset class="form-group">
-				<label for="question09">Question Here</label>
+				<label for="question09">On a sunny day, I have to go outside!</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question09" name="scores[8]">
@@ -150,7 +150,7 @@
 			</fieldset>
 			<h4><strong>Question 10</strong></h4>
 			<fieldset class="form-group">
-				<label for="question10">Question Here</label>
+				<label for="question10">Dogs are man's best friend.</label>
 				<br>
 				<div class="col-md-4">
 					<select class="form-control" id="question10" name="scores[9]">
@@ -178,13 +178,11 @@
 			</div>
 			<div class="modal-body">
 				<h2 id="bestFriendName"></h2>
-				<img id="bestFriendImg" src="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13116244_10107568960519320_7024834722285826624_o.jpg" alt="Best Friend">
+				<img id="bestFriendImg" src="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13116244_10107568960519320_7024834722285826624_o.jpg" width=500px alt="Best Friend">
 			</div>
 		</div>
 	</div>
 </div>
-
-<div id="myInput"></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -207,9 +205,7 @@
 			$("#bestFriendName").text(data.name);
 			$("#bestFriendImg").attr("src", data.photo);
 
-			alert("Your best friend is " + data.name);
-
-			$("bestFriendModal").modal("show");
+			$("#bestFriendModal").modal("show");
 
 		});
 

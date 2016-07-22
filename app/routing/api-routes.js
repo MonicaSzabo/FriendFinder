@@ -36,8 +36,6 @@ module.exports = function (app) {
 			differencesArray[i] = totalDifference;
 		}
 
-		console.log(differencesArray);
-
 		var bestFriendNum = differencesArray[0];
 		var bestFriendIndex = 0;
 
